@@ -31,6 +31,12 @@ $for(header-includes)$
 $endfor$
 </head>
 <body>
+  <div class="nav">
+    <div class="nav-title">Lindsay Stevens</div>
+    $if(home-link)$
+    <a class="nav-home" href="../index.html">Home</a>
+    $endif$
+  </div>
   <div class="container">
     $if(title)$
     <div id="template-title-section">
@@ -51,7 +57,7 @@ $endfor$
     $endif$
     $if(toc)$
     <div id="template-toc-section">
-      <h2 id="template-toc">Table of Contents</h2>
+      <h2 id="template-toc-title">Table of Contents</h2>
       $toc$
     </div>
     $endif$

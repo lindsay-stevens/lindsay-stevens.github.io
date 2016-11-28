@@ -1,9 +1,17 @@
 /* Larger vertical spacing. */
 html {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.25em;
   /* Chop words that would otherwise cause scrolling. */
   overflow-wrap: break-word;
+}
+
+/* Template components. */
+#template-title {
+  font-size: 1.5em;
+}
+#template-toc-title {
+  font-style: italic;
 }
 
 /* Tone down the font sizing. */
@@ -19,6 +27,11 @@ h3 {
 }
 body {
   font-size: 0.95em;
+}
+
+/* Turn off underlines in links. */
+a {
+  text-decoration: none;
 }
 
 /* Tighter indent for lists. */
@@ -56,18 +69,42 @@ pre {
   word-wrap: break-word;
 }
 
-.row {
-  width: 95%;
-}
-
 .container {
   max-width: 90%;
   margin: auto;
+  border-radius: 0 0 4px 4px;
+  border: 2px solid rgba(55, 117, 182, 0.3);
+  padding: 2px 12px 2px 12px;
 }
 
 /* Absolute limit for width on big screens for legibility. */
 @media (min-width: 900px) {
-  .container {
+  .container, .nav {
     width: 800px;
   }
+}
+
+/* Navigation bar with slight colour gradient and matching main container.*/
+.nav {
+  border-radius: 4px 4px 0 0;
+  font-size: 0.9em;
+  letter-spacing: 5px;
+  margin: auto;
+  max-width: 90%;
+  padding: 14px 14px 32px 14px;
+  background: linear-gradient(to bottom, rgba(55, 117, 182, 0.4), rgba(55, 117, 182, 0.3));
+}
+
+/* To place the nav-title and nav-home on opposite sides. */
+.nav-title {
+  color: white;
+  float: left;
+}
+
+.nav-home {
+  color: white;
+  float: right;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
 }
