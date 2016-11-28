@@ -1,11 +1,24 @@
-<style>
-/* Smaller text but larger vertical spacing. */
+/* Larger vertical spacing. */
 html {
   font-family: sans-serif;
-  font-size: 0.90em;
   line-height: 1.25em;
   /* Chop words that would otherwise cause scrolling. */
   overflow-wrap: break-word;
+}
+
+/* Tone down the font sizing. */
+h1 {
+  font-size: 1.4em;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+body {
+  font-size: 0.95em;
 }
 
 /* Tighter indent for lists. */
@@ -58,4 +71,3 @@ pre {
     width: 800px;
   }
 }
-</style>

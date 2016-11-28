@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc"/>
@@ -12,19 +11,18 @@ $endfor$
 $if(date-meta)$
   <meta name="date" content="$date-meta$" />
 $endif$
-  <title> </title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <title>$title$</title>
 $if(quotes)$
   <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
 $endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
 $if(highlighting-css)$
   <style type="text/css">
 $highlighting-css$
   </style>
 $endif$
-$for(css)$
-  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
-$endfor$
 $if(math)$
   $math$
 $endif$
@@ -37,14 +35,18 @@ $endfor$
     $if(title)$
     <div id="template-title-section">
       <h1 id="template-title">$title$</h1>
+      $if(author)$
       <ul>
         $for(author)$
         <li>$author$</li>
         $endfor$
-        $if(date)$
-        <li>$date$</li>
-        $endif$
       </ul>
+      $endif$
+      $if(date)$
+      <ul>
+        <li>$date$</li>
+      </ul>
+      $endif$
     </div>
     $endif$
     $if(toc)$
