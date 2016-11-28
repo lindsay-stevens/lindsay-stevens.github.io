@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc"/>
+  <title> </title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style>
+  /* Smaller text but larger vertical spacing. */
+  html {
+    font-family: sans-serif;
+    font-size: 0.90em;
+    line-height: 1.25em;
+    /* Chop words that would otherwise cause scrolling. */
+    overflow-wrap: break-word;
+  }
+  
+  /* Tighter indent for lists. */
+  ul {
+    padding-left: 1.25em;
+  }
+  
+  /* Horizontally centre and scale images. */ 
+  img {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+  }
+  
+  /* Subtler image captions. */
+  .caption {
+   font-size: 90%;
+   font-style: italic;
+  }
+  
+  /* Nice grey rounded box for code. */
+  pre {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #999;
+    display: block;
+    font-family: monospace;
+    margin: 0 0 10px;
+    overflow: auto;
+    padding: 9.5px;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+  
+  .row {
+    width: 95%;
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /* Absolute limit for width on big screens for legibility. */
+  @media (min-width: 900px) {
+    .container {
+      width: 800px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+        <div id="template-title-section">
+      <h1 id="template-title">Resume</h1>
+      <ul>
+                      </ul>
+    </div>
+            <div id="template-toc-section">
+      <h2 id="template-toc">Table of Contents</h2>
+      <ul>
+      <li><a href="#contact-details">Contact Details</a></li>
+      <li><a href="#skills">Skills</a><ul>
+      <li><a href="#clinical-research-data-systems">Clinical Research Data Systems</a></li>
+      <li><a href="#programming-languages">Programming Languages</a></li>
+      <li><a href="#system-administration">System Administration</a></li>
+      <li><a href="#project-management">Project Management</a></li>
+      </ul></li>
+      <li><a href="#employment">Employment</a><ul>
+      <li><a href="#unsw-australia-clinical-trials-database-developer">UNSW Australia: Clinical Trials Database Developer</a></li>
+      <li><a href="#university-of-sydney-clinical-data-coordinator">University of Sydney: Clinical Data Coordinator</a></li>
+      <li><a href="#university-of-sydney-trial-coordinator-data-manager">University of Sydney: Trial Coordinator / Data Manager</a></li>
+      <li><a href="#university-of-sydney-data-manager-clinical-trials-assistant">University of Sydney: Data Manager / Clinical Trials Assistant</a></li>
+      </ul></li>
+      <li><a href="#education">Education</a><ul>
+      <li><a href="#formal">Formal</a></li>
+      <li><a href="#presentations-given">Presentations Given</a></li>
+      </ul></li>
+      </ul>
+    </div>
+        <div id="template-content-section">
+            <h2 id="contact-details">Contact Details</h2>
+<ul>
+<li>Name: Lindsay Stevens.</li>
+<li>Email: lindsay.stevens.au@gmail.com.</li>
+<li>Location: Sydney, NSW, Australia.</li>
+</ul>
+<h2 id="skills">Skills</h2>
+<h3 id="clinical-research-data-systems">Clinical Research Data Systems</h3>
+<p>Building data collection and management systems to meet the requirements of clinical research protocols. Number of systems implemented, including updates to existing systems is in brackets.</p>
+<ul>
+<li>System Name (number implemented): System Description.</li>
+<li>OpenClinica (9): a Java webapp for clinical research data management.</li>
+<li>ODK Collect (3): an Android app for field and/or offline data collection.</li>
+<li>TeleForm (2): a Windows app for paper form OCR, review and verification.</li>
+<li>LimeSurvey (1): a PHP webapp for online survey data collection.</li>
+</ul>
+<h3 id="programming-languages">Programming Languages</h3>
+<p>Implementing scripts or systems to facilitate, automate or simplify tasks. Each language lists examples of implemented systems. The list is ordered with the most familiar at the top.</p>
+<ul>
+<li>SQL / PL/PGSQL:
+<ul>
+<li>Collection of ETL queries using OpenClinica metadata to convert EAV data into a tabular for easier end user reporting, using PostgreSQL.</li>
+<li>Collection of complex data validation queries for a research project, including progress tracking using row hashes, using PostgreSQL and Access.</li>
+<li>A personal time and task management database including task levelling.</li>
+<li>4 project management databases for tracking research project progress, managing documents, agreements and payments, using Access.</li>
+</ul></li>
+<li>Python:
+<ul>
+<li>An OpenClinica SOAP XML web services client.</li>
+<li>A LimeSurvey REST JSON web services client.</li>
+<li>A website for research project promotion, using Django, CherryPy, Psycopg2; and pywin32 to run CherryPy as Windows service.</li>
+<li>A functional test suite for a LimeSurvey survey template / behavioural customisation in JavaScript for Firefox, Chrome, and Internet Explorer, using Selenium WebDriver, and the above LimeSurvey client, and a custom threaded test runner.</li>
+<li>Tools for reading ODK Collect form definitions and outputting formatted images to display questions (ODK has plain text only), and outputting a formatted MS Word document, using Pillow, Python-docx, xlrd and lxml.</li>
+<li>A data mapping and transfer script to bring LabKey blood test results into OpenClinica, using Requests, Xmltodict and the above OpenClinica client.</li>
+</ul></li>
+<li>VBA:
+<ul>
+<li>A task levelling module for taking a schedule of tasks and their maximum daily fraction and determining when each task could be done, using Access.</li>
+<li>A module for reading an OpenClinica form definition Excel spreadsheet into a relational structure while preserving row order, using Access.</li>
+<li>A prototype of the above SQL / PL/SQL ETL queries system, using Access.</li>
+</ul></li>
+<li>XSLT/XPath:
+<ul>
+<li>A script using ODK Collect metadata to combine response data XML into one document, including generating a XSD for Excel mapping and a Stata script for attaching code labels to values.</li>
+<li>A script for summarising data into a tabular formatted XML document for mapping into Excel, with a XSL-FO stylesheet for a matching PDF report.</li>
+<li>A script for extracting worksheet data from an Excel XML spreadsheet so as to remove all extraneous formatting information.</li>
+<li>A script for converting a XForm XML document into a tabular formatted XML document for mapping into Excel.</li>
+</ul></li>
+<li>JavaScript:
+<ul>
+<li>A module for customising a LimeSurvey survey template to look (HTML, CSS) and behave (JS) like a Bootstrap v3 site, using JQuery.</li>
+<li>Firefox Selenium IDE (selenese) scripts for automating browser interaction with OpenClinica, to accurately reproduce actions in bulk.</li>
+</ul></li>
+<li>PHP:
+<ul>
+<li>An OpenClinica SOAP XML web services client.</li>
+</ul></li>
+<li>Stata:
+<ul>
+<li>A script using OpenClinica metadata to generate Stata scripts for attaching code labels to values.</li>
+<li>Scripts for converting a directory tree of XLSX or CSV files to Stata files.</li>
+<li>Scripts performing simple data analyses and producing customised tables and charts, as part of Masters of Biostatistics study.</li>
+</ul></li>
+<li>SAS:
+<ul>
+<li>Scripts for converting a directory tree of XLSX or CSV files to SAS files.</li>
+<li>Scripts performing simple data analyses and producing customised tables and charts, as part of Masters of Biostatistics study.</li>
+</ul></li>
+<li>Powershell:
+<ul>
+<li>A script for replacing placeholders in a directory tree of files with values from a consolidated configuration file.</li>
+</ul></li>
+<li>Java:
+<ul>
+<li>A class for using the Saxon-HE XLST library to run and test XML transformations.</li>
+</ul></li>
+</ul>
+<h3 id="system-administration">System Administration</h3>
+<p>Configure systems to deliver or run the above services, apps and scripts.</p>
+<ul>
+<li>Server: Windows Server 2008 R2, Ubuntu 14 / 15:
+<ul>
+<li>Create task-based local user accounts, assigning appropriate role and file system permissions to help mitigate security risks.</li>
+<li>Create scheduled tasks to perform maintenance jobs or run scripts.</li>
+<li>Create services to manage long-running processes.</li>
+<li>Create Docker containers and Docker-compose configurations for managing service environments.</li>
+</ul></li>
+<li>Database: PostgreSQL 8.4 to 9.6:
+<ul>
+<li>Configure ports, memory usage, SSL, logging, host based auth and ident mappings, query optimisation, statistics targets, SSPI authentication, foreign tables, user accounts and user roles.</li>
+<li>Configure pgAgent to schedule database maintenance jobs.</li>
+</ul></li>
+<li>Web Server: Tomcat 6 to 7, Apache httpd 2.4, Cherrypy and Waitress (WSGI):
+<ul>
+<li>Configure SSL, OCSP, logging, ports, memory usage.</li>
+<li>Configure virtual hosts and reverse proxy to centrally manage SSL termination and forward requests to machine local services.</li>
+</ul></li>
+<li>Android Tablets: Nexus 9, Samsung Galaxy Tab 3+:
+<ul>
+<li>Design standardised configuration for devices to ease administration.</li>
+<li>Utilise device security features and implement policies to help mitigate risk of exposure of confidential data.</li>
+</ul></li>
+<li>Documentation:
+<ul>
+<li>Standard Operating Procedures to define the development process.</li>
+<li>System-specific documentation to facilitate maintenance, at the administrative / deployment level as well as functionally.</li>
+</ul></li>
+<li>Development Tools:
+<ul>
+<li>Git to track and distribute project or configuration changes.</li>
+<li>Docker and Docker-compose to manage development and deployment environments.</li>
+<li>Editors: Notepad++, PyCharm, IntelliJIDEA, and Vim.</li>
+<li>Markups: MarkDown, ReStructured Text, HTML.</li>
+</ul></li>
+</ul>
+<h3 id="project-management">Project Management</h3>
+<p>Techniques used to manage projects and communicate with stakeholders.</p>
+<ul>
+<li>Time tracking: Access database:
+<ul>
+<li>Description of each task activity, to build a diary of progress for reporting and review on completion of a project.</li>
+<li>Estimate of time spent per task activity, to build an association between a resource and a type of task or scope of project.</li>
+<li>Projection of task completion, to build a task schedule for discussion of prioritisation and resource allocation.</li>
+</ul></li>
+<li>Project Documentation: Implementation Plans:
+<ul>
+<li>Description of project scope, the requirements, and how the deliverables meet the requirements, to provide an overview of the purpose of the project.</li>
+<li>Description of deliverables, their versions, change summary, and validation process, to summarise the role of that component.</li>
+</ul></li>
+</ul>
+<p><a href="#template-toc">Back to Contents</a></p>
+<h2 id="employment">Employment</h2>
+<h3 id="unsw-australia-clinical-trials-database-developer">UNSW Australia: Clinical Trials Database Developer</h3>
+<ul>
+<li>Department: Kirby Institute, Viral Hepatitis C Research Program.</li>
+<li>Reports To: Clinical Trials Manager.</li>
+<li>Duration: 2013-06 to current.</li>
+<li>Function: Design, develop, and support clinical research data systems.</li>
+<li>Key responsibilities:
+<ul>
+<li>Performed business analysis by consulting with the project coordination team and supporting documents to gather system specifications.</li>
+<li>Performed project management by maintaining a system implementation plan and task management to communicate development progress and process.</li>
+<li>Performed system implementation by configuring or customising existing software or developing new software, to meet the specifications.</li>
+<li>Performed system validation by using a combination of automated, manual and user acceptance tests to ensure the system meets the specifications.</li>
+<li>Performed system administration by configuring software and monitoring activity to ensure systems can continue to meet business needs.</li>
+<li>Performed user support and training by providing assistance, documentation, presentations or interactive sessions to promote effective system use.</li>
+</ul></li>
+<li>Achievements:
+<ul>
+<li>Implemented systems / projects described above in the Skills section.</li>
+<li>Implemented OpenClinica systems:
+<ul>
+<li>Registry Code / Reference (Project name): Research area.</li>
+<li>NCT02102451 (CEASE): surveillance of hepatitis C treatment.</li>
+<li>NCT02064049 (SToP-C): phase 4 hepatitis C.</li>
+<li>http://kirby.unsw.edu.au/projects/healthy-liver-campaign (LiverLife): Liver health promotion among PWID.</li>
+</ul></li>
+<li>Updated / extended OpenClinica systems:
+<ul>
+<li>NCT01364090 (ACTIVATE): phase 4 hepatitis C.</li>
+<li>NCT01336010 (ATAHC II): phase 4 hepatitis C.</li>
+<li>NCT01743521 (DARE-C): phase 4 hepatitis C.</li>
+<li>NCT02156570 (DARE-C II): phase 4 hepatitis C.</li>
+</ul></li>
+<li>Implemented ODK Collect systems:
+<ul>
+<li>LiverLife (as above).</li>
+<li>SToP-C (as above).</li>
+<li>NCT02336139 (SIMPLIFY): phase 2 hepatitis C.</li>
+</ul></li>
+<li>Implemented a LimeSurvey survey for CEASE (as above).</li>
+</ul></li>
+</ul>
+<h3 id="university-of-sydney-clinical-data-coordinator">University of Sydney: Clinical Data Coordinator</h3>
+<ul>
+<li>Department: NHMRC Clinical Trials Centre, Data Management.</li>
+<li>Reports To: Head of Data Management.</li>
+<li>Duration: 2012-05 to 2013-06.</li>
+<li>Function: Design, develop, and support clinical research data systems.</li>
+<li>Key responsibilities:
+<ul>
+<li>As above for &quot;Clinical Trials Database Developer&quot;, except with a focus on using existing tools to build data collection systems.</li>
+</ul></li>
+<li>Achievements:
+<ul>
+<li>Implemented OpenClinica systems for:
+<ul>
+<li>Registry Code / Reference (Project name): Research area.</li>
+<li>ACTRN12611000378921 (SEED): quality of life study for brain cancer.</li>
+<li>ACTRN12610000796088 (PARAGON): phase 2 gynaecological cancer.</li>
+</ul></li>
+<li>Implemented TeleForm OCR systems:
+<ul>
+<li>ACTRN12610000796088 (PARAGON): phase 2 gynaecological cancer.</li>
+<li>ACTRN12605000055606 (BOOST II): phase 3 neonatal health.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="university-of-sydney-trial-coordinator-data-manager">University of Sydney: Trial Coordinator / Data Manager</h3>
+<ul>
+<li>Department: NHMRC Clinical Trials Centre, Oncology Trials Program.</li>
+<li>Reports To: Associate Oncology Program Manager.</li>
+<li>Duration: 2010-07 to 2012-05.</li>
+<li>Function: Coordinate multi-centre Oncology clinical research projects at all stages of the study life cycle.</li>
+<li>Key responsibilities:
+<ul>
+<li>Performed project start up by conducting site feasibility assessments, arranging services and suppliers, preparing preparing and collating GCP essential documents, preparing ethics and regulatory applications (NEAF, CTN, RGO, SSA), specification and acceptance testing of data systems, and conducting staff training to meet GCP sponsor responsibilities.</li>
+<li>Performed project conduct by maintaining GCP essential documents, data validation and tracking, distribution of safety information and associated ethics and regulatory submissions (pharmacovigilance), data entry from paper participant questionnaires, arranging collection of pathology samples and radiological plans, and coordinating project meetings to meet GCP sponsor responsibilities.</li>
+<li>Performed project close out by finalising GCP essential documents, data validation, and ethics and regulatory submissions to ensure that all GCP sponsor responsibilities were met.</li>
+</ul></li>
+<li>Achievements:
+<ul>
+<li>Performed project coordination on:
+<ul>
+<li>Registry Code / Reference (Project name): Research area.</li>
+<li>ACTRN12611000245998 (TACTIC): phase 2 biliary tract cancer.</li>
+<li>ACTRN12609000158268 (LAP07): phase 3 pancreatic cancer.</li>
+<li>ACTRN12609000109202 (ATTAX3): phase 2 oesophago-gastric cancer.</li>
+<li>ACTRN12605000361606 (ESPAC-3): phase 3 pancreatic cancer.</li>
+<li>ACTRN12605000025639 (MAX): phase 2/3 colorectal cancer.</li>
+<li>ACTRN12608000382370 (DECO): phase 2 oesophageal cancer.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="university-of-sydney-data-manager-clinical-trials-assistant">University of Sydney: Data Manager / Clinical Trials Assistant</h3>
+<ul>
+<li>Department: NHMRC Clinical Trials Centre, Oncology Trials Program.</li>
+<li>Reports To: Associate Oncology Program Manager.</li>
+<li>Duration: 2008-07 to 2010-07.</li>
+<li>Function: Support lead project Trial Coordinators / Data Managers to coordinate multi-centre Oncology clinical research projects at all stages of the study life cycle.</li>
+<li>Key responsibilities:</li>
+<li>As above for &quot;Trial Coordinator / Data Manager&quot;, except with less focus on project start up.</li>
+</ul>
+<p><a href="#template-toc">Back to Contents</a></p>
+<h2 id="education">Education</h2>
+<h3 id="formal">Formal</h3>
+<h4 id="masters-of-biostatistics">Masters of Biostatistics</h4>
+<ul>
+<li>Institution: Macquarie University.</li>
+<li>Graduation: 2020 (Planned).</li>
+<li>Grade: TBA.</li>
+<li>Subjects:
+<ul>
+<li>Complete:
+<ul>
+<li>Data Management and Statistical Computing</li>
+<li>Probability and Distribution Theory</li>
+<li>Principles of Statistical Inference</li>
+<li>Linear Models</li>
+</ul></li>
+</ul></li>
+</ul>
+<h4 id="bachelor-of-science-anatomy-and-physiology">Bachelor of Science (Anatomy and Physiology)</h4>
+<ul>
+<li>Institution: Macquarie University.</li>
+<li>Graduation: 2010.</li>
+<li>Grade: GPA 3.5/4.0</li>
+<li>Subjects:
+<ul>
+<li>Anatomy (Clinical Anatomy and Introductory Histology),</li>
+<li>Physiology (Physiology, Introductory Pathology),</li>
+<li>Basic Sciences (Introductory Chemistry, Physics and Math)</li>
+<li>Public Health (Introductory Statistics, Epidemiology and Research Methods)</li>
+</ul></li>
+</ul>
+<h3 id="presentations-given">Presentations Given</h3>
+<ul>
+<li>OpenClinica Conference, Boston US: 2016-10.
+<ul>
+<li>Presentation on the Community DataMart project.</li>
+<li>Presentation on data collection on Android tablets with ODK Collect.</li>
+</ul></li>
+<li>Sydney Python User Group Meetup: 2015-09.
+<ul>
+<li>Presentation on PostgreSQL query optimisation and PL/Python.</li>
+</ul></li>
+<li>OpenClinica Conference, Amsterdam NL: 2015-06.
+<ul>
+<li>Presentation on the OpenClinica ETL / datamart system in PostgreSQL.</li>
+<li>Interactive demonstration session of data management tools and scripting.</li>
+</ul></li>
+</ul>
+<p><a href="#template-toc">Back to Contents</a></p>
+          </div>
+  </div>
+</body>
+</html>

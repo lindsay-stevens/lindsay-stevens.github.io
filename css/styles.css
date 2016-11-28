@@ -1,0 +1,61 @@
+<style>
+/* Smaller text but larger vertical spacing. */
+html {
+  font-family: sans-serif;
+  font-size: 0.90em;
+  line-height: 1.25em;
+  /* Chop words that would otherwise cause scrolling. */
+  overflow-wrap: break-word;
+}
+
+/* Tighter indent for lists. */
+ul {
+  padding-left: 1.25em;
+}
+
+/* Horizontally centre and scale images. */ 
+img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+/* Subtler image captions. */
+.caption {
+ font-size: 90%;
+ font-style: italic;
+}
+
+/* Nice grey rounded box for code. */
+pre {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #999;
+  display: block;
+  font-family: monospace;
+  margin: 0 0 10px;
+  overflow: auto;
+  padding: 9.5px;
+  page-break-inside: avoid;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.row {
+  width: 95%;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Absolute limit for width on big screens for legibility. */
+@media (min-width: 900px) {
+  .container {
+    width: 800px;
+  }
+}
+</style>
