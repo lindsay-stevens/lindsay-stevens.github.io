@@ -2,11 +2,11 @@
 - Name: Lindsay Stevens
 - Location: Sydney, NSW, Australia
 - Email: lindsay.stevens.au@gmail.com
-- GitHub: https://github.com/lindsay-stevens
+- GitHub: <https://github.com/lindsay-stevens>
 
 
 # Skills
-I have 8.5 years' experience in academic health research. I have developed strong skills in two main areas:
+I have 8.5 years' experience in academic clinical trials and health research. I have developed strong skills in two main areas:
 
 - Software application development
 - Clinical trial data and project management
