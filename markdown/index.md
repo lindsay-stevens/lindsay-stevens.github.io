@@ -6,7 +6,7 @@
 
 
 # Summary
-I am a clinical trials data management (CTDM) specialist. I have 9 years' experience, spanning the trial data lifecycle:
+I am a clinical trials data management (CTDM) specialist. I have 9.5 years' experience, spanning the trial data lifecycle:
 
 - developing CTDM plans, policies and systems that comply with regulatory requirements and guidelines
 - building and maintaining CTDM systems to collect, collate, manage, and clean study data
@@ -46,10 +46,10 @@ I am familiar with the following off-the-shelf data systems useful for trials:
 I am familiar with the following technologies.
 
 - Programming languages:
-    - Advanced: SQL, PL/PGSQL, Python, Stata, VBA/VBScript, and XSLT
+    - Advanced: SQL, Python, PL/PGSQL, Stata, VBA/VBScript, and XSLT
     - Intermediate: PHP, JavaScript, SAS, Powershell/CMD, R, Java, and C#
 - Environments:
-    - Advanced: Windows, Windows Server, Android 4.4 and up
+    - Advanced: Windows, Centos, Windows Server, Android 4.4 and up
     - Intermediate: Ubuntu, Docker, Google Suite for Education
 - Other (Advanced): Microsoft Access, Microsoft Excel
 - Servers:
@@ -101,11 +101,25 @@ I designed and implemented the following system integrations for the VHCRP team 
 # Employment
 
 
+## OpenClinica LLC: Solutions Engineer
+
+- Department: Product and Service Development / Customer Support 
+- Reporting to: OpenClinica CEO
+- Duration: 2017-08 to present (4 months)
+
+
+### Key Responsibilities
+
+- Develop a new, enhanced ETL and self-serve capable reporting and analytics solution
+- Potential customer demonstrations of the reporting module
+- Technical support
+
+
 ## Cancer Institute NSW: Systems Analyst / Architect
 
 - Department: Strategic Research and Investment (SRI) Division, Data Intelligence Team
 - Reporting to: Data Intelligence Manager
-- Duration: 2017-03 to present (3 months)
+- Duration: 2017-03 to 2017-08 (5 months)
 
 
 ### Key Responsibilities
@@ -124,7 +138,7 @@ I designed and implemented the following system integrations for the VHCRP team 
 
 ### Key Responsibilities
 
-- Prototype an new, enhanced ETL and self-serve capable reporting and analytics solution
+- Prototype a new, enhanced ETL and self-serve capable reporting and analytics solution
 
 
 ## UNSW Australia: Clinical Trials Database Developer
@@ -240,7 +254,7 @@ I designed and implemented the following system integrations for the VHCRP team 
 
 - Institution: Macquarie University
 - Graduation: 2020 (Planned)
-- Grade: TBA
+- Grade: 3.3/4.0
 
 
 ### Subjects
@@ -249,7 +263,8 @@ I designed and implemented the following system integrations for the VHCRP team 
 - 2015 Probability and Distribution Theory (Mark 75)
 - 2015 Principles of Statistical Inference (Mark 62)
 - 2016 Linear Models (Mark 86)
-- 2017 Survival Analysis (Mark TBA)
+- 2017 Survival Analysis (Mark 72)
+- 2017 Categorical Data and Generalised Linear Models (Mark 68)
 
 
 ## Bachelor of Science
@@ -275,6 +290,8 @@ I designed and implemented the following system integrations for the VHCRP team 
 
 # Presentations
 
+- OpenClinica Conference, Amsterdam NL: 2017-12
+    + OpenClinica Insight Reporting Module
 - OpenClinica Conference, Boston US: 2016-10
     + Community DataMart ETL project
     + Tablet Data Collection: deploying Android tablets and ODK Collect
