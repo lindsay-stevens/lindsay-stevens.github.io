@@ -11,22 +11,31 @@ html {
   font-size: 1.5em;
 }
 #template-toc-title {
+  font-size: 1.2em;
   font-style: italic;
+}
+.download {
+  float: right;
+  font-size: 1.75em;
 }
 
 /* Headers: tone down the font sizing, increase spacing. */
-h1 {
+h1:not(#template-title) {
   font-size: 1.4em;
-  padding-top: 0.75em;
+  padding-top: 1em;
+  padding-bottom: 0.2em;
+  border-top: 1px solid rgba(0, 119, 204, 0.5);
 }
-h2 {
+h2:not(#template-toc-title) {
   font-size: 1.2em;
-  padding-top: 0.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.2em;
+  border-top: 1px solid rgba(0, 119, 204, 0.5);
 }
 h3 {
   font-size: 1em;
   font-weight: bold;
-  padding-top: 0.25em;
+  padding-top: 0.6em;
 }
 body {
   font-size: 0.95em;
