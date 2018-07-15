@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://www.lindsay-stevens.com.au"/>
 <meta property="og:image" content="http://localhost:8000/img/profile.jpg">
 
-  <title>Lindsay Stevens &ndash; Consulting Services</title>
+  <title>Lindsay Stevens &ndash; Projects</title>
 
 </head>
 <body>
@@ -80,23 +80,26 @@
 <article class="single">
   <header>
     
-    <h1 id="consulting-services">Consulting Services</h1>
+    <h1 id="projects">Projects</h1>
   </header>
   <div>
-<p>I am prepared to tackle any challenge - please contact me to discuss your requirements.</p>
-<p>Below are some examples of practical problems I can help with.</p>
-<h3>Clinical Research Data Management</h3>
-<p><img alt="clipboard-list" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/clipboard-list-solid.svg"> Design Case Report Forms (CRFs) or Surveys for collecting data.</p>
-<p><img alt="check-circle" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/check-circle-regular.svg"> Design validation rules, scripts, or procedures for cleaning data.</p>
-<p><img alt="hand-paper" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/hand-paper-regular.svg"> Implement web or mobile systems for flexible and efficient data collection.</p>
-<p><img alt="briefcase" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/briefcase-solid.svg"> Implement validated, secure systems for reliability and regulatory compliance.</p>
-<p><img alt="map-signs" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/map-signs-solid.svg"> Advise on system procurement to help translate jargon and select a fit-for-purpose solution.</p>
-<h3>Data Processing and Analysis</h3>
-<p><img alt="project-diagram" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/project-diagram-solid.svg"> Integrate multiple systems, to make them work together or act as one.</p>
-<p><img alt="cubes" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/cubes-solid.svg"> Establish ETL pipelines for efficiently and accurately wrangling data.</p>
-<p><img alt="chart-line" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/chart-line-solid.svg"> Implement metrics reports or listings for keeping track of projects and progress.</p>
-<p><img alt="puzzle-piece" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/puzzle-piece-solid.svg"> Implement complex or precise business intelligence reports for making sense of data.</p>
-<p><img alt="database" class="fa-list-icon" src="https://www.lindsay-stevens.com.au/icons/database-solid.svg"> Advise on PostgreSQL usage and configuration to make the most of features and resources.</p>  </div>
+<p>The following are examples projects where I've applied my skills to deliver solutions.</p>
+<h2>Mobile Data Collection</h2>
+<p>I designed and implemented a mobile data collection framework that improved quality and completeness of participant questionnaire data for 5 projects conducted by the VHCRP team at the Kirby Institute.</p>
+<p>The framework covered all aspects - policies for device procurement, configuration, management, account management and security; tools for form design, validation, multi-language capable presentation customisation; procedures for data collection, submission, and storage; tools for ETL of collected data for analysis in Stata.</p>
+<p>The deployment included 83 Android tablets for offline data collection at study sites, including hospitals, clinics and prisons in Australia and internationally, with thousands of responses from hundreds of participants had been collected and processed. At the centre of the framework was ODK Collect, an Android app for processing XML-based form definitions. Design and data processing tools included custom distributable desktop apps written in Python.</p>
+<h2>OpenClinica Community DataMart</h2>
+<p>I designed and implemented an ETL and reporting system that streamlined reporting and analysis workflows for 13 projects conducted by the VHCRP team at the Kirby Institute.</p>
+<p>This system replaced a time-intensive process with numerous manual steps, with a robust, automated process that integrated with existing reporting and analysis tools while maintaining a high level of security and ease of use.</p>
+<p>This system was implemented with PostgreSQL using SQL, PL/PGSQL, and Python. The ETL system involved transforming a column-based data storage format into user-friendly tables corresponding to the original form design templates uploaded to OpenClinica.</p>
+<p>The deployment included encrypted connections between database servers and with client machines, data access controls mirroring those in OpenClinica, and integrated Windows domain authentication. Client tools were also developed to integrate via ODBC with Stata, SAS and Microsoft Access; as well as automated VBScript tools to simplify setup for new users. The preparation of detailed documentation and delivery of targeted training encouraged adoption of the system across the team.</p>
+<h2>System Integrations</h2>
+<p>I designed and implemented the following system integrations for the VHCRP team at the Kirby Institute:</p>
+<ul>
+<li>An automated daily transfer of hepatitis C test results from a LabKey sample management database to the clinical database in OpenClinica. Written in Python, and included development of a re-usable library for interacting with OpenClinica's SOAP XML webservices.</li>
+<li>A promotional website for a study with a custom styled LimeSurvey instance for web-based data collection from study participants. Written in Python and JavaScript and included development of a re-usable library for interacting with LimeSurvey's REST JSON webservices.</li>
+<li>An automated integration test suite for the above custom LimeSurvey template to ensure that these elements worked as expected across common browsers. Written in Python using Selenium WebDrivers for Firefox, Chrome and Internet Explorer.</li>
+</ul>  </div>
 </article>
 
     <footer>
